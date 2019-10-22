@@ -1,5 +1,5 @@
 # Your Code Here
-def map(source_array)
+def map(source_array){|n|}
   new_array= []
   row = 0 
   while row <source_array.length do 
