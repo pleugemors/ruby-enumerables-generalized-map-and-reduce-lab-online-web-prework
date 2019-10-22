@@ -19,6 +19,8 @@ def reduce(source_array, start = 0  )
     value= yield(source_array[row], 0)
     if value != false 
       sum += value
+    elsif value == false
+      return false
     end 
     puts source_array[row]
     row += 1 
