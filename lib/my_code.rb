@@ -14,13 +14,13 @@ def reduce(source_array, start = 0  )
   row = 0
   sum = start 
   puts "source array"
-
+  memo = source_array[0]
   while row < source_array.length do 
-    value= yield(source_array[row], 0)
-    if value != false 
+    memo= yield(source_array[row], memo)
+    if memo != false 
       sum += value
-    elsif value == true
-      return true
+    #elsif value == true
+    #  return true
     end 
     puts source_array[row]
     row += 1 
