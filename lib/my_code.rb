@@ -13,6 +13,8 @@ end
 def reduce(source_array, start = 0  )
   row = 0
   sum = 0 
+  puts "source array"
+  puts source_array
   while row < source_array.length do 
     value= yield( source_array[row], start)
     puts value
