@@ -6,4 +6,5 @@ def map(source_array)
     new_array.push(source[row] yield)
     row += 1 
   end
+  new_array
 end
