@@ -11,7 +11,7 @@ def map(source_array)
   new_array
 end
 
-def reduce(source_array, start = 0 )
+def reduce(source_array, start = nil )
   row = 0 
   while row < source_array.length do 
     value= yield( source_array[row], start)
