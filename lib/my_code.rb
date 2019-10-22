@@ -7,7 +7,8 @@ def map(source_array)
     yield( new_array.push(source_array[row]))
     row += 1 
   end
-  puts new_array
-  pp source_array
+  puts new_array[0]
+  puts new_array[1]
+  puts source_array[0]
   new_array
 end
