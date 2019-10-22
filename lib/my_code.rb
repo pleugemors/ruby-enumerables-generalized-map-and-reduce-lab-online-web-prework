@@ -18,5 +18,5 @@ def reduce(source_array, start = nil )
     value= yield( source_array[row], start)
     row += 1 
   end
-  sum
+  value
 end
