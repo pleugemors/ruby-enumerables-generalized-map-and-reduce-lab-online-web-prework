@@ -18,7 +18,7 @@ def reduce(source_array, start = 0  )
   while row < source_array.length do 
     memo= yield(source_array[row], memo)
     if memo != false 
-      sum += value
+      sum += memo
     #elsif value == true
     #  return true
     end 
