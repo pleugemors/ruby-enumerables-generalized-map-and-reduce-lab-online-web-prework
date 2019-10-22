@@ -14,7 +14,7 @@ end
 def reduce(source_array, start = 0 )
   row = 0 
   while row < source_array.length do 
-    value= yield( source_array[row]; start)
+    value= yield( source_array[row], start)
     row += 1 
   end
   value
