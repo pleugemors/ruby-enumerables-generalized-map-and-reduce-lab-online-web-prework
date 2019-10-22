@@ -12,5 +12,9 @@ def map(source_array)
 end
 
 def reduce(source_array, start = 0 )
-  
+  row = 0 
+  while row < source_array.length do 
+    
+    row += 1 
+  end
 end
