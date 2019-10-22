@@ -16,7 +16,7 @@ def reduce(source_array, start = 0  )
   puts "source array"
 
   while row < source_array.length do 
-    value= yield(sum,  source_array[row])
+    value= yield(source_array[row], sum)
     puts value
     puts source_array[row]
     row += 1 
