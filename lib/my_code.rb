@@ -12,10 +12,12 @@ def map(source_array)
 end
 
 def reduce(source_array, start = nil )
-  row = 0 
+  row = 0
+  sum = 0 
   while row < source_array.length do 
-    value += yield( source_array[row], start)
+    value= yield( source_array[row], start)
+    sum += value
     row += 1 
   end
-  value
+  sum
 end
