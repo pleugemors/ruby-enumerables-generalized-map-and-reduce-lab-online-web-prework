@@ -10,5 +10,6 @@ def map(source_array)
   puts new_array[0]
   puts new_array[1]
   puts source_array[0]
+  puts source_array[1]
   new_array
 end
