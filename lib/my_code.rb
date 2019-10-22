@@ -1,3 +1,4 @@
+require 'pp'
 # Your Code Here
 def map(source_array)
   new_array= []
@@ -7,6 +8,6 @@ def map(source_array)
     row += 1 
   end
   puts new_array
-  puts source_array
+  pp source_array
   new_array
 end
