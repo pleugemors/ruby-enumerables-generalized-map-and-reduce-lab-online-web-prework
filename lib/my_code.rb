@@ -12,14 +12,14 @@ end
 
 def reduce(source_array, start = 0  )
   row = 0
-  sum = 0 
+  sum = start 
   puts "source array"
 
   while row < source_array.length do 
-    value= yield(start,  source_array[row])
+    value= yield(sum,  source_array[row])
     puts value
     puts source_array[row]
     row += 1 
   end
-  value
+  sum
 end
